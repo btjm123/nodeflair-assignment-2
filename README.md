@@ -20,14 +20,11 @@ In view of that I created some mock JSON data to test on the frontend.
 
 The reason why I established different naming conventions for both the frontend and mock backend is to emphasize seperation between both ends. This makes it clear which parts of the code are fetched from the mock backend and which parts are responsible for the frontend logic.
 
+- Clear seperation of concerns (i.e Models, Views)
 - Modularised and reusuable components (i.e `JobListingPage` contains a series of `JobListingCards` and one `JobDescriptionCard`)
 - State Management
 
 I used a simple useState hook on the top-level component (JobListingPage) and propagated the currently selected JobListing state to the child elements via prop drilling. Reason why I didn't opt for a useContext hook was because I felt that the useContext hook was an overkill solution for a shallow component tree in my app.
-
-- Clear seperation of concerns (i.e Models, Views)
-
-additional features implemented
 
 ### Additional Features
 
