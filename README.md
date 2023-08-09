@@ -1,4 +1,4 @@
-## Assignment for Nodeflair SWE Internshop
+## Assignment for Nodeflair SWE Internship
 
 ### Overview
 
