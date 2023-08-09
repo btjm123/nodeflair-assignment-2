@@ -1,0 +1,39 @@
+/* utility classes for controling font styles */
+
+/* Font Weight Styles */
+.fw-400 {
+  font-weight: 400;
+}
+
+.fw-600 {
+  font-weight: 600;
+}
+
+.fw-700 {
+  font-weight: 700;
+}
+
+/* Font Size Styles */
+.fs-14 {
+  font-size: 14px;
+}
+
+.fs-16 {
+  font-size: 16px;
+}
+.fs-21 {
+  font-size: 21px;
+}
+
+/* Font Color Styles */
+.green-text {
+  color: rgb(31, 199, 106);
+}
+
+.gray-text {
+  color: rgb(131, 131, 131);
+}
+
+.black-text {
+  color: rgb(58, 58, 58);
+}

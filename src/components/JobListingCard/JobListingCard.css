@@ -1,0 +1,96 @@
+* {
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+}
+
+/* styling classes for JobListingCard */
+.job-card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  margin-bottom: 18px; /* move this to rowGap */
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 0px 2px 0px;
+  padding: 20px 20px 10px 20px;
+  background-color: #fff;
+  cursor: pointer;
+  transition: ease-in-out box-shadow 0.2s;
+}
+
+.job-card:hover {
+  box-shadow: 0 8px 4px -4px rgba(0, 0, 0, 0.35);
+}
+
+.selected-job-card {
+  border: 2px solid #1fc76a;
+}
+
+.skillset-info {
+  display: flex;
+  column-gap: 15px;
+  padding-top: 5px;
+}
+
+.company-info {
+  display: flex;
+  border-bottom: 1px solid rgba(150, 150, 150, 0.5);
+}
+.company-image-container {
+  width: 45px;
+  height: 45px;
+  overflow: hidden;
+}
+.company-image {
+  width: 45px;
+  height: 45px;
+  object-fit: contain;
+  overflow: hidden;
+}
+
+.company-metadata-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+
+  text-align: left;
+  margin-left: 12px;
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+.company-metadata-top-container {
+  margin-bottom: 4px;
+}
+
+.job-scope-container {
+  position: absolute;
+  right: 0;
+  border-radius: 5px;
+  padding: 5px 8px;
+  background-color: rgb(221, 247, 233);
+}
+
+.company-metadata-mid-container {
+  margin-bottom: 2px;
+}
+
+.company-metadata-optional-bottom-container {
+  margin-top: 6px;
+}
+
+.company-name {
+  margin-right: 15px;
+}
+
+.updated-at {
+  margin-right: 15px;
+}
+
+.location-icon {
+  margin-right: 4px;
+}
+
+.estimated-salary-tag {
+  margin-left: 8px;
+  border-radius: 5px;
+  padding: 3px 5px;
+  background-color: #f1f1f1;
+}

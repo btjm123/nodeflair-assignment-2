@@ -1,0 +1,10 @@
+.main-container {
+  padding: 5px 8px;
+  background-color: rgb(241, 241, 241);
+  border-radius: 6px;
+}
+
+.skillset-content {
+  color: rgb(131, 131, 131);
+  font-family: 'Roboto Mono', Consolas, monospace;
+}

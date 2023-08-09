@@ -1,0 +1,88 @@
+import { JobListing, JobType } from '../models';
+
+export const data: Array<JobListing> = [
+  {
+    company_name: 'Apple',
+    star_rating: '4.6',
+    job_title: 'iOS Developer',
+    job_scope: JobType.IOS,
+    location: 'Cupertino, CA',
+    photo_url:
+      'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNApb6oS6MmAjZrHzpLWHJGdmL2gyQlOzFCLAWBByo&s',
+    salary_lower_bound: 6500,
+    salary_upper_bound: 9500,
+    skillsets: ['Swift', 'Objective-C', 'ARKit'],
+    created_at: new Date('2023-08-07T00:00:00.000Z'),
+    updated_at: new Date('2023-08-07T00:00:00.000Z'),
+  },
+  {
+    company_name: 'Amazon',
+    star_rating: '4.2',
+    job_title: 'Backend Developer',
+    job_scope: JobType.FULL_STACK,
+    location: 'Seattle, WA',
+    photo_url:
+      'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCtNvd1ICvriZeOJjLr0a9xkH93xupVzf-Xg6AqQRj&s',
+    salary_lower_bound: 7000,
+    salary_upper_bound: 10000,
+    skillsets: ['Java', 'AWS', 'DynamoDB'],
+    created_at: new Date('2023-08-06T00:00:00.000Z'),
+    updated_at: new Date('2023-08-06T00:00:00.000Z'),
+  },
+  {
+    company_name: 'Microsoft',
+    star_rating: '4.3',
+    job_title: 'Azure Cloud Engineer',
+    job_scope: JobType.DEVOPS,
+    location: 'Redmond, WA',
+    photo_url:
+      'https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Microsoft_logo.svg/2048px-Microsoft_logo.svg.png',
+    salary_lower_bound: 6800,
+    salary_upper_bound: 9800,
+    skillsets: ['Azure', '.NET', 'PowerShell'],
+    created_at: new Date('2023-08-05T00:00:00.000Z'),
+    updated_at: new Date('2023-08-05T00:00:00.000Z'),
+  },
+  {
+    company_name: 'Meta',
+    star_rating: '4.1',
+    job_title: 'VR Developer',
+    job_scope: JobType.PRODUCT_MANAGEMENT,
+    location: 'Menlo Park, CA',
+    photo_url:
+      'https://static.vecteezy.com/system/resources/previews/004/263/114/original/meta-logo-meta-by-facebook-icon-editorial-logo-for-social-media-free-vector.jpg',
+    salary_lower_bound: 7200,
+    salary_upper_bound: 10200,
+    skillsets: ['Unity', 'C#', 'Oculus SDK'],
+    created_at: new Date('2023-08-04T00:00:00.000Z'),
+    updated_at: new Date('2023-08-04T00:00:00.000Z'),
+  },
+  {
+    company_name: 'Netflix',
+    star_rating: '4.4',
+    job_title: 'Data Scientist',
+    job_scope: JobType.DATA_ENGINEERING,
+    location: 'Los Gatos, CA',
+    photo_url:
+      'https://images.ctfassets.net/4cd45et68cgf/Rx83JoRDMkYNlMC9MKzcB/2b14d5a59fc3937afd3f03191e19502d/Netflix-Symbol.png?w=700&h=456',
+    salary_lower_bound: 7500,
+    salary_upper_bound: 10500,
+    skillsets: ['Python', 'Machine Learning', 'Big Data'],
+    created_at: new Date('2023-08-03T00:00:00.000Z'),
+    updated_at: new Date('2023-08-03T00:00:00.000Z'),
+  },
+  {
+    company_name: 'Google',
+    star_rating: '4.5',
+    job_title: 'Software Engineer',
+    job_scope: JobType.DATA_SCIENCE,
+    location: 'Mountain View, CA',
+    photo_url:
+      'https://static.vecteezy.com/system/resources/previews/013/760/951/original/colourful-google-logo-in-dark-background-free-vector.jpg',
+    salary_lower_bound: 6000,
+    salary_upper_bound: 9000,
+    skillsets: ['Python', 'TensorFlow', 'Cloud Computing'],
+    created_at: new Date('2023-08-08T00:00:00.000Z'),
+    updated_at: new Date('2023-08-08T00:00:00.000Z'),
+  },
+];

@@ -1,0 +1,39 @@
+.main-card {
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  border-radius: 8px;
+  padding: 30px 20px;
+}
+
+.company-description {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.company-buttons-row {
+  margin-top: 16px;
+  display: flex;
+  column-gap: 10px;
+}
+
+.parent-button {
+  border: none;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  padding: 8px 16px;
+  border-radius: 8px;
+}
+
+.apply-button {
+  background-color: #1fc76a;
+  color: #fff;
+}
+
+.share-button {
+  color: #1fc76a;
+  background-color: #fff;
+  border: 2px solid #1fc76a;
+}
