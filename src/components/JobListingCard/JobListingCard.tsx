@@ -15,7 +15,7 @@ const JobListingCard: React.FC<JobListingCardProps> = ({
   selectedJobListing,
   setSelectedJobListing,
 }) => {
-  console.log(selectedJobListing);
+  console.log('selectedJobListing', selectedJobListing);
   return (
     <div
       className={`${
@@ -75,8 +75,8 @@ const JobListingCard: React.FC<JobListingCardProps> = ({
         </div>
       </div>
       <div className="skillset-info">
-        {jobListing.skillsets.map((skillset) => (
-          <SkillsetTag skillset={skillset} />
+        {jobListing.skillsets.map((skillset, idx) => (
+          <SkillsetTag skillset={skillset} key={idx}/>
         ))}
       </div>
     </div>

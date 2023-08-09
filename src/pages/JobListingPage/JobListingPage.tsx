@@ -16,7 +16,8 @@ const JobListingPage = () => {
       <div className="job-listing-view">
         {jobListings.map((jobListing) => (
           <JobListingCard
-          selectedJobListing={jobListing}
+            key={jobListing.id}
+            selectedJobListing={selectedJobListing}
             jobListing={jobListing}
             setSelectedJobListing={setSelectedJobListing}
           />

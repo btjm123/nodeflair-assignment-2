@@ -2,6 +2,7 @@ import { JobListing, JobType } from '../models';
 
 export const data: Array<JobListing> = [
   {
+    id: 1,
     company_name: 'Apple',
     star_rating: '4.6',
     job_title: 'iOS Developer',
@@ -16,6 +17,7 @@ export const data: Array<JobListing> = [
     updated_at: new Date('2023-08-07T00:00:00.000Z'),
   },
   {
+    id: 2,
     company_name: 'Amazon',
     star_rating: '4.2',
     job_title: 'Backend Developer',
@@ -30,6 +32,7 @@ export const data: Array<JobListing> = [
     updated_at: new Date('2023-08-06T00:00:00.000Z'),
   },
   {
+    id: 3,
     company_name: 'Microsoft',
     star_rating: '4.3',
     job_title: 'Azure Cloud Engineer',
@@ -44,6 +47,7 @@ export const data: Array<JobListing> = [
     updated_at: new Date('2023-08-05T00:00:00.000Z'),
   },
   {
+    id: 4,
     company_name: 'Meta',
     star_rating: '4.1',
     job_title: 'VR Developer',
@@ -58,6 +62,7 @@ export const data: Array<JobListing> = [
     updated_at: new Date('2023-08-04T00:00:00.000Z'),
   },
   {
+    id: 5,
     company_name: 'Netflix',
     star_rating: '4.4',
     job_title: 'Data Scientist',
@@ -72,6 +77,7 @@ export const data: Array<JobListing> = [
     updated_at: new Date('2023-08-03T00:00:00.000Z'),
   },
   {
+    id: 6,
     company_name: 'Google',
     star_rating: '4.5',
     job_title: 'Software Engineer',

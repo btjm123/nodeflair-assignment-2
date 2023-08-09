@@ -1,6 +1,7 @@
 import { JobType } from '.';
 
 type JobListing = {
+  id: number;
   company_name: string;
   star_rating: string;
   job_title: string;
