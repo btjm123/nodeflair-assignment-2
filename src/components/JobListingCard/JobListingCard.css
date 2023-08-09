@@ -12,10 +12,13 @@
   padding: 20px 20px 10px 20px;
   background-color: #fff;
   cursor: pointer;
-  transition: ease-in-out box-shadow 0.2s;
+  position: relative;
+  top: 0;
+  transition: ease-in-out all 0.25s;
 }
 
 .job-card:hover {
+  top: -4px;
   box-shadow: 0 8px 4px -4px rgba(0, 0, 0, 0.35);
 }
 

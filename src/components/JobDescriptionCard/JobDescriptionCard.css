@@ -26,6 +26,13 @@
   cursor: pointer;
   padding: 8px 16px;
   border-radius: 8px;
+  position: relative;
+  top: 0;
+  transition: ease-in-out 0.2s top;
+}
+
+.parent-button:hover {
+  top: -5px;
 }
 
 .apply-button {
