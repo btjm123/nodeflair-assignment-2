@@ -1,4 +1,4 @@
-export enum JobType {
+export enum JobScope {
   FULL_STACK = 'FullStack',
   FRONTEND = 'Frontend',
   BACKEND = 'Backend',
@@ -9,4 +9,18 @@ export enum JobType {
   ANDROID = 'Android',
   IOS = 'iOS',
   DATA_ENGINEERING = 'Data Eng',
+}
+
+export enum JobEmploymentType {
+  PERMANENT = 'Permanent',
+  CONTRACT = 'Contract',
+  PART_TIME = 'Part Time',
+}
+
+export enum JobSeniority {
+  JUNIOR = 'Junior',
+  MID = 'Mid',
+  SENIOR = 'Senior',
+  STAFF = 'Staff',
+  DIRECTOR = 'Director',
 }

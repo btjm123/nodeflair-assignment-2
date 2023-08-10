@@ -1,4 +1,9 @@
-import { JobListing, JobType } from '../models';
+import {
+  JobEmploymentType,
+  JobListing,
+  JobScope,
+  JobSeniority,
+} from '../models';
 
 export const data: Array<JobListing> = [
   {
@@ -6,7 +11,7 @@ export const data: Array<JobListing> = [
     company_name: 'Apple',
     star_rating: '4.6',
     job_title: 'iOS Developer',
-    job_scope: JobType.IOS,
+    job_scope: JobScope.IOS,
     location: 'Cupertino, CA',
     photo_url:
       'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNApb6oS6MmAjZrHzpLWHJGdmL2gyQlOzFCLAWBByo&s',
@@ -15,13 +20,16 @@ export const data: Array<JobListing> = [
     skillsets: ['Swift', 'Objective-C', 'ARKit'],
     created_at: new Date('2023-08-07T00:00:00.000Z'),
     updated_at: new Date('2023-08-07T00:00:00.000Z'),
+    job_type: JobEmploymentType.PERMANENT,
+    seniority: JobSeniority.JUNIOR,
+    years_of_experience: 3,
   },
   {
     id: 2,
     company_name: 'Amazon',
     star_rating: '4.2',
     job_title: 'Backend Developer',
-    job_scope: JobType.FULL_STACK,
+    job_scope: JobScope.FULL_STACK,
     location: 'Seattle, WA',
     photo_url:
       'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCtNvd1ICvriZeOJjLr0a9xkH93xupVzf-Xg6AqQRj&s',
@@ -30,13 +38,16 @@ export const data: Array<JobListing> = [
     skillsets: ['Java', 'AWS', 'DynamoDB'],
     created_at: new Date('2023-08-06T00:00:00.000Z'),
     updated_at: new Date('2023-08-06T00:00:00.000Z'),
+    job_type: JobEmploymentType.PART_TIME,
+    seniority: JobSeniority.MID,
+    years_of_experience: 5,
   },
   {
     id: 3,
     company_name: 'Microsoft',
     star_rating: '4.3',
     job_title: 'Azure Cloud Engineer',
-    job_scope: JobType.DEVOPS,
+    job_scope: JobScope.DEVOPS,
     location: 'Redmond, WA',
     photo_url:
       'https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Microsoft_logo.svg/2048px-Microsoft_logo.svg.png',
@@ -45,13 +56,16 @@ export const data: Array<JobListing> = [
     skillsets: ['Azure', '.NET', 'PowerShell'],
     created_at: new Date('2023-08-05T00:00:00.000Z'),
     updated_at: new Date('2023-08-05T00:00:00.000Z'),
+    job_type: JobEmploymentType.PERMANENT,
+    seniority: JobSeniority.JUNIOR,
+    years_of_experience: 2,
   },
   {
     id: 4,
     company_name: 'Meta',
     star_rating: '4.1',
     job_title: 'VR Developer',
-    job_scope: JobType.PRODUCT_MANAGEMENT,
+    job_scope: JobScope.PRODUCT_MANAGEMENT,
     location: 'Menlo Park, CA',
     photo_url:
       'https://static.vecteezy.com/system/resources/previews/004/263/114/original/meta-logo-meta-by-facebook-icon-editorial-logo-for-social-media-free-vector.jpg',
@@ -60,13 +74,16 @@ export const data: Array<JobListing> = [
     skillsets: ['Unity', 'C#', 'Oculus SDK'],
     created_at: new Date('2023-08-04T00:00:00.000Z'),
     updated_at: new Date('2023-08-04T00:00:00.000Z'),
+    job_type: JobEmploymentType.CONTRACT,
+    seniority: JobSeniority.JUNIOR,
+    years_of_experience: 4,
   },
   {
     id: 5,
     company_name: 'Netflix',
     star_rating: '4.4',
     job_title: 'Data Scientist',
-    job_scope: JobType.DATA_ENGINEERING,
+    job_scope: JobScope.DATA_ENGINEERING,
     location: 'Los Gatos, CA',
     photo_url:
       'https://images.ctfassets.net/4cd45et68cgf/Rx83JoRDMkYNlMC9MKzcB/2b14d5a59fc3937afd3f03191e19502d/Netflix-Symbol.png?w=700&h=456',
@@ -75,13 +92,16 @@ export const data: Array<JobListing> = [
     skillsets: ['Python', 'Machine Learning', 'Big Data'],
     created_at: new Date('2023-08-03T00:00:00.000Z'),
     updated_at: new Date('2023-08-03T00:00:00.000Z'),
+    job_type: JobEmploymentType.PERMANENT,
+    seniority: JobSeniority.SENIOR,
+    years_of_experience: 10,
   },
   {
     id: 6,
     company_name: 'Google',
     star_rating: '4.5',
     job_title: 'Software Engineer',
-    job_scope: JobType.DATA_SCIENCE,
+    job_scope: JobScope.DATA_SCIENCE,
     location: 'Mountain View, CA',
     photo_url:
       'https://static.vecteezy.com/system/resources/previews/013/760/951/original/colourful-google-logo-in-dark-background-free-vector.jpg',
@@ -90,5 +110,8 @@ export const data: Array<JobListing> = [
     skillsets: ['Python', 'TensorFlow', 'Cloud Computing'],
     created_at: new Date('2023-08-08T00:00:00.000Z'),
     updated_at: new Date('2023-08-08T00:00:00.000Z'),
+    job_type: JobEmploymentType.PERMANENT,
+    seniority: JobSeniority.DIRECTOR,
+    years_of_experience: 15,
   },
 ];

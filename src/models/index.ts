@@ -1,4 +1,4 @@
-import { JobType } from './enum';
+import { JobScope, JobEmploymentType, JobSeniority } from './enum';
 import { JobListing } from './types';
 
-export { JobType, type JobListing };
+export { JobScope, JobEmploymentType, JobSeniority, type JobListing };
