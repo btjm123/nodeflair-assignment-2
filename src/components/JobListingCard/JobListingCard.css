@@ -1,7 +1,3 @@
-* {
-  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
-}
-
 /* styling classes for JobListingCard */
 .job-card {
   box-sizing: border-box;
@@ -29,8 +25,18 @@
 
 .skillset-info {
   display: flex;
+  flex-wrap: nowrap; /* prevent tags from wrapping to the next line */
+  overflow-x: hidden; /* hide overflowing content */
+  white-space: nowrap; /* prevent breaking onto the next line */
+  text-overflow: ellipsis;
   column-gap: 15px;
   padding-top: 5px;
+}
+
+.gay {
+  display: inline;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .company-info {

@@ -1,9 +1,13 @@
 .main-card {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   background-color: white;
   border-radius: 8px;
-  padding: 30px 20px;
+  padding: 30px 25px;
+}
+
+.main-card-top-row {
+  display: flex;
 }
 
 .company-description {
@@ -44,4 +48,29 @@
   color: #1fc76a;
   background-color: #fff;
   border: 2px solid #1fc76a;
+}
+
+.job-metadata-info {
+  display: flex;
+  flex-direction: column;
+  row-gap: 25px;
+  border-top: 0.5px solid rgb(58, 58, 58, 0.1);
+  border-bottom: 0.5px solid rgb(58, 58, 58, 0.1);
+  margin: 20px 0px;
+  padding: 20px 0px;
+}
+
+.job-metdata-block {
+  display: flex;
+  flex-direction: column;
+  row-gap: 6px;
+  text-align: left;
+}
+.job-metadata-info-first-row {
+  display: flex;
+  column-gap: 200px;
+}
+
+.job-description {
+  text-align: left;
 }
