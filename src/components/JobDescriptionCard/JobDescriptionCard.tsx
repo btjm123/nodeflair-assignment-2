@@ -70,19 +70,19 @@ const JobDescriptionCard: React.FC<JobDescriptionCardProps> = ({
       <div className="job-metadata-info">
         <div className="job-metadata-info-first-row">
           <div className="job-metdata-block">
-            <span className="fw-700 fs-14">Job Type</span>
+            <span className="fw-700 fs-14 black-text">Job Type</span>
             <span className="fw-400 fs-14">{jobListing.job_type}</span>
           </div>
           <div className="job-metdata-block">
-            <span className="fw-700 fs-14">Seniority</span>
+            <span className="fw-700 fs-14 black-text">Seniority</span>
             <SkillsetTag skillset={jobListing.seniority} />
           </div>
         </div>
 
         <div>
           <div className="job-metdata-block">
-            <span className="fw-700 fs-14">Years of Experience</span>
-            <span className="fw-400 fs-14">
+            <span className="fw-700 fs-14 black-text">Years of Experience</span>
+            <span className="fw-400 fs-14 black-text">
               {`At least ${jobListing.years_of_experience} years of experience`}
             </span>
           </div>
@@ -91,52 +91,24 @@ const JobDescriptionCard: React.FC<JobDescriptionCardProps> = ({
 
       <div className="job-description">
         <span className="fw-700 fs-16 black-text">Job Description</span>
-        <p className="fw-400 fs-14 black-text job-description-full-info">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
-        </p>
-        <p className="fw-400 fs-14 black-text job-description-full-info">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
-        </p>
-        <p className="fw-400 fs-14 black-text job-description-full-info">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
-        </p>
-        <p className="fw-400 fs-14 black-text job-description-full-info">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
-        </p>
-        <p className="fw-400 fs-14 black-text job-description-full-info">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
-        </p>
+        {Array(12)
+          .fill(0)
+          .map(() => (
+            <p className="fw-400 fs-14 black-text job-description-full-info">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+          ))}
       </div>
+
+      <button className="similar-jobs-button">
+        <span className="fw-700 fs-14">Search Similiar Jobs</span>
+      </button>
     </div>
   );
 };

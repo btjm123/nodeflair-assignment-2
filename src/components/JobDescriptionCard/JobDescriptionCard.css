@@ -74,3 +74,23 @@
 .job-description {
   text-align: left;
 }
+
+.similar-jobs-button {
+  position: relative;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 12px 0;
+  color: #1fc76a;
+  background-color: rgb(221, 247, 233);
+  border: none;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: 0.2s ease-in-out all;
+}
+
+.similar-jobs-button:hover {
+  top: -4px;
+  box-shadow: 0 6px 4px -4px rgba(0, 0, 0, 0.1);
+}
