@@ -2,7 +2,7 @@ import JobDescriptionCard from '../../components/JobDescriptionCard/JobDescripti
 import JobListingCard from '../../components/JobListingCard/JobListingCard';
 import './JobListingPage.css';
 import data from '../../data';
-import { useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { JobListing } from '../../models';
 
 const JobListingPage = () => {
@@ -10,6 +10,15 @@ const JobListingPage = () => {
   const [selectedJobListing, setSelectedJobListing] = useState<JobListing>(
     jobListings[0]
   );
+  const jobDescriptionCardRef = useRef<HTMLDivElement>(null);
+
+  // Whenever a new job is selected, scroll to the top
+  useEffect(() => {
+    if (jobDescriptionCardRef) {
+      jobDescriptionCardRef.current?.scrollIntoView();
+    }
+    window.scrollTo(0, 0);
+  }, [selectedJobListing]);
 
   return (
     <div className="job-listing-page">
@@ -25,7 +34,10 @@ const JobListingPage = () => {
       </div>
 
       <div className="job-description-view">
-        <JobDescriptionCard jobListing={selectedJobListing} />
+        <JobDescriptionCard
+          jobListing={selectedJobListing}
+          jobDescriptionCardRef={jobDescriptionCardRef}
+        />
       </div>
     </div>
   );

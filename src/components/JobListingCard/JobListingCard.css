@@ -33,12 +33,6 @@
   padding-top: 5px;
 }
 
-.gay {
-  display: inline;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
 .company-info {
   display: flex;
   border-bottom: 1px solid rgba(150, 150, 150, 0.5);
@@ -103,4 +97,9 @@
   border-radius: 5px;
   padding: 3px 5px;
   background-color: #f1f1f1;
+}
+
+.job-description-full-info {
+  margin-top: 24px;
+  line-height: 1.6em;
 }
