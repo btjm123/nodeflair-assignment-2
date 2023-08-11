@@ -39,6 +39,11 @@
   top: -5px;
 }
 
+.filter-green {
+  filter: invert(56%) sepia(93%) saturate(380%) hue-rotate(94deg)
+    brightness(92%) contrast(93%);
+}
+
 .apply-button {
   background-color: #1fc76a;
   color: #fff;

@@ -60,7 +60,7 @@ const JobDescriptionCard: React.FC<JobDescriptionCardProps> = ({
               </button>
               <button className="fw-700 parent-button share-button">
                 <img
-                  className="share-icon"
+                  className="share-icon filter-green"
                   src="https://nodeflair.com/packs/media/reviews/share_icon-e7584c2c.svg"
                 />
               </button>
