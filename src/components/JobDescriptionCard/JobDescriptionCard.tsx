@@ -35,7 +35,9 @@ const JobDescriptionCard: React.FC<JobDescriptionCardProps> = ({
           </div>
 
           <div className="company-metadata-mid-container">
-            <span className="fw-700 fs-16">{jobListing.job_title}</span>
+            <span className="fw-700 fs-16 black-text">
+              {jobListing.job_title}
+            </span>
           </div>
 
           <div className="company-metadata-bottom-container">
