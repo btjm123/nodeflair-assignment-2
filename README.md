@@ -1,5 +1,7 @@
 ## Assignment for Nodeflair SWE Internship
 
+🟢 Update: was offered in the end :>
+
 ### Overview
 
 ![nodeflair](https://github.com/btjm123/nodeflair-assignment-2/assets/19306879/4cbecbdb-f2eb-490c-91a9-89200b3514f0)
