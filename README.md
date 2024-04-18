@@ -1,6 +1,6 @@
 ## Assignment for Nodeflair SWE Internship
 
-🟢 Update: was offered in the end :>
+## 🟢 Update: I was offered in the end :>
 
 ### Overview
 
